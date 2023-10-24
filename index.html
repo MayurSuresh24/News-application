@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Mayur's News</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width initial-scale=1"  >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Quicksand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body>
+    <nav class="main_nav" id="main_nav">
+        <ul class="nav_list" id="nav_list">
+            <li onclick="onnavclick('cricket')" id="cricket">Cricket</li>
+            <li onclick="onnavclick('cinema')" id="cinema">Cinema</li>
+            <li id="tech" onclick="onnavclick('tech')">Technology</li>
+            <li><input type="text"  id="search_text" alt="science" placeholder=" eg - Science"></li>
+            <li><input type="submit" id="search_button" onclick="tosearch()"></li>
+            
+            
+        </ul>
+        
+    </nav>
+    <img src="/moontwo.png" alt="dark" id="mode">
+        
+
+    <h1 >NEWS</h1>
+    <main >
+       <div  class="cards_container" id="cards_container">
+
+        
+       </div>
+
+       
+   
+
+
+       
+    </main>
+    <template id="cards_temp">
+        <div class="card_template">
+            <img src="http://via.placeholder.com/300x200" alt="image" id="news_image">
+            <div class="news_heading" id="news_heading"></div>
+            <br>
+            <div class="news_info" id="news_info">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas similique qui aut ratione facere adipisci incidunt fugit molestiae nesciunt magni voluptatibus labore sint laudantium perspiciatis recusandae, tempora ut non totam!</p>
+            </div>
+            <br>
+            <div class="news_source" id="news_source"></div>
+        </div>
+    </template>
+    <script>
+        var mode=document.getElementById("mode");
+        mode.onclick=function (){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                mode.src="/sunone.png";
+            }
+            else{
+                mode.src="/moontwo.png";
+            }
+           
+        }
+      
+        
+       
+
+      
+     
+
+        
+            
+
+
+       
+       </script>
+</body>
+</html>
